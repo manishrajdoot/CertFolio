@@ -1,0 +1,213 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling - Fixed Position */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* Responsive Navigation Styling */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* Slideshow Styling */
+.slideshow-container {
+    margin-top: 80px; /* Adjusted for the fixed header */
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.certificate {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.dots-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Download Section */
+.download-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.download-container a {
+    margin: 10px;
+}
+
+.download-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-container button:hover {
+    background-color: #45a049;
+}
+
+/* Contact Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Social Media Section */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.social-links a {
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    background-color: #555;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .download-container, .social-links {
+        flex-direction: column;
+    }
+}
